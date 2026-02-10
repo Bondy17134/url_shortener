@@ -1,5 +1,6 @@
 """
- contains information about database connection
+database.py
+-> contains information about database connection
 """
 
 from sqlalchemy import create_engine # engine is an entry point to database

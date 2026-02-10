@@ -1,6 +1,7 @@
 """
 schemas.py
 -> Implements "type hinting" to veriffy that the request and the response match the data types defined
+-> defines what data the API expected from the client and the server
 """
 
 from pydantic import BaseModel
