@@ -1,6 +1,7 @@
 from pydantic_settings import BaseSettings
 from functools import lru_cache
 
+# Defines environment variables in application
 class Settings(BaseSettings):
     env_name: str = "Local"
     base_url: str = "http://localhost:8000"
@@ -9,6 +10,7 @@ class Settings(BaseSettings):
     class Config:
         env_file = ".env"
 
+# Shows a message once settings are loaded
 @lru_cache
 def get_setting() -> Settings:
     settings = Settings()
